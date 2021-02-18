@@ -62,5 +62,63 @@ function addManager(){
         console.log(employeeDB)
         askQuestion()
     })
+function addEngineer(){
+    questions=[{
+        type: "input",
+        message: "What is the employee's name?",
+        name: "name"
+    },
+    {
+        type: "input",
+        message: "What is the employee's ID number?",
+        name: "id"
+    },
+    {
+        type: "input",
+        message: "What is the employee's email address?",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What is the employee's Github username?",
+        name: "github"
+    }
+]
+    inquirer.prompt(questions)
+    .then(function(response){
+        const newEngineer= new Engineer(response.name,response.id,response.email,response.github)
+        employeeDB.push(newEngineer)
+        console.log(employeeDB)
+        askQuestion()
+    })
+function addIntern(){
+    questions=[{
+        type: "input",
+        message: "What is the employee's name?",
+        name: "name"
+    },
+    {
+        type: "input",
+        message: "What is the employee's ID number?",
+        name: "id"
+    },
+    {
+        type: "input",
+        message: "What is the employee's email address?",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What is the employee's school?",
+        name: "school"
+    }
+]
+    inquirer.prompt(questions)
+    .then(function(response){
+        const newIntern= new Intern(response.name,response.id,response.email,response.school)
+        employeeDB.push(newIntern)
+        console.log(employeeDB)
+        askQuestion()
+    })
 }
 askQuestion()

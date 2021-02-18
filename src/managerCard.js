@@ -16,4 +16,4 @@ function card(response){
     `
 }
 
-module.exports = card
+module.exports = card;

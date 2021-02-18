@@ -1,0 +1,26 @@
+{
+  "name": "teamprofilegenerator",
+  "version": "1.0.0",
+  "description": "Generates an html team profile via a command line application",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcrammer/teamProfileGenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcrammer/teamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/kcrammer/teamProfileGenerator#readme"
+}
